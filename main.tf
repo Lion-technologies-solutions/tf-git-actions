@@ -1,5 +1,8 @@
 provider "aws" {
-  region = terraform.workspace == "default" ? "us-east-1" : "us-west-2"
+  region = "us-east-2"
+  shared_credentials_file = "/Users/elvisnketi/.aws/creds"
+  profile = "dev"
+  #region = terraform.workspace == "default" ? "us-east-1" : "us-west-2"
 }
 
 #Get Linux AMI ID using SSM Parameter endpoint in us-east-1
