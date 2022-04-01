@@ -1,6 +1,6 @@
 terraform {
   backend "remote" {
-    organization = "Lion Technologies Solutions"
+    organization = "liontechnologiessolutions"
 
     workspaces {
       name = "bmo-infra"
